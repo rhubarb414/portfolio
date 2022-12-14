@@ -1,0 +1,7 @@
+body {
+  font-family: Trebuchet, Arial, sans-serif;
+}
+
+body * {
+  border: 5px solid aqua;
+}
