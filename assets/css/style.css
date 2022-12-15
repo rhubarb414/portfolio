@@ -30,7 +30,8 @@ section {
 nav li {
   display: inline;
 }
-nav a {
+
+a {
   color: azure;
 }
 
@@ -143,6 +144,8 @@ main {
 
 footer {
   display: flex;
+  background-color: var(--blue-main);
+  color: azure;
   /* justify-content: space-between; */
 }
 
