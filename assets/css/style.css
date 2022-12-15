@@ -1,7 +1,30 @@
+:root {
+  --nav-background: darkblue;
+  --nav-footer: azure;
+}
+
 body {
   font-family: Trebuchet, Arial, sans-serif;
 }
 
+/* border to outline elements in dev */
 body * {
   border: 5px solid aqua;
+}
+
+header {
+  background-color: darkblue;
+  color: azure;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline;
+}
+nav a {
+  color: azure;
 }
