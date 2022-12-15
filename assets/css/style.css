@@ -48,7 +48,7 @@ main {
 
 .work {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: nowrap;
 }
 
 .work-header {
@@ -62,12 +62,17 @@ main {
 
 .work-card-hero img {
   width: 100%;
+  border: 3px solid black;
 }
 
 .work-cards li {
   display: inline;
 }
 
+.work-cards-row-one img {
+  width: 45%;
+  border: 3px solid black;
+}
 .work-cards ul {
 }
 
