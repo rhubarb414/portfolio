@@ -1,6 +1,4 @@
 :root {
-  --nav-background: darkblue;
-  --nav-footer: azure;
 }
 
 body {
@@ -27,4 +25,42 @@ nav li {
 }
 nav a {
   color: azure;
+}
+
+.bio {
+  display: flex;
+}
+
+.bio-header {
+  width: 20%;
+}
+.bio-content {
+  width: 80%;
+  flex: 1;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-header {
+  width: 20%;
+}
+.work-card-hero {
+  width: 75%;
+}
+
+.work-cards {
+  width: 75%;
+  justify-content: right;
+}
+footer {
+  display: flex;
+}
+.contact-header {
+  width: 20%;
+}
+.contact li {
+  display: inline;
 }
