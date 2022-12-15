@@ -54,12 +54,14 @@ main {
 .work-header {
   width: 20%;
 }
-.work-card-hero {
-}
 
 .work-cards {
   width: 80%;
   justify-content: right;
+}
+
+.work-card-hero img {
+  width: 100%;
 }
 
 .work-cards li {
