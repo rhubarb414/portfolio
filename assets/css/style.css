@@ -1,4 +1,5 @@
 :root {
+  --blue-main: rgb(14, 14, 42);
 }
 
 body {
@@ -11,15 +12,21 @@ body * {
 }
 
 header {
-  background-color: rgb(14, 14, 42);
+  background-color: var(--blue-main);
   color: azure;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  margin-left: 1%;
+  margin-right: 3%;
 }
 
+section {
+  margin: 0;
+  padding: 0;
+}
 nav li {
   display: inline;
 }
@@ -54,6 +61,7 @@ main {
 
 .bio-content {
   width: 80%;
+  margin-right: 5%;
   flex: 1;
 }
 
@@ -76,12 +84,28 @@ main {
 .work-card-hero {
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 .work-card-hero img {
   width: 90%;
   margin-top: 10px;
-  border: 3px solid black;
+  border: 3px solid var(--blue-main);
+}
+
+.work-card-hero a::before {
+  content: "Javascript";
+  color: azure;
+  background-color: var(--blue-main);
+  position: absolute;
+  bottom: 20px;
+  padding: 10px;
+}
+
+.work-cards ul {
+  /* Make it possible for li elements to take up the whole container */
+  padding: 0;
+  position: relative;
 }
 
 .work-cards li {
@@ -91,17 +115,30 @@ main {
 
 .work-cards-row-one img {
   width: 45%;
-  border: 3px solid black;
+  border: 3px solid var(--blue-main);
 }
 
 .work-cards-row-two img {
   width: 45%;
-  border: 3px solid black;
+  border: 3px solid var(--blue-main);
 }
 
-/* Make it possible for li elements to take up the whole container */
-.work-cards ul {
-  padding: 0;
+.work-card-one::before {
+  content: "HTML";
+  color: azure;
+  background-color: var(--blue-main);
+  position: absolute;
+  bottom: 20px;
+  padding: 5px;
+}
+
+.work-card-two::before {
+  content: "CSS";
+  color: azure;
+  background-color: var(--blue-main);
+  position: absolute;
+  bottom: 20px;
+  padding: 5px;
 }
 
 footer {
