@@ -27,6 +27,13 @@ nav a {
   color: azure;
 }
 
+/* Begin layout for main using grid
+
+main {
+  display: grid;
+} */
+
+/* Old css for trying the main layout using flex */
 .bio {
   display: flex;
 }
@@ -41,23 +48,32 @@ nav a {
 
 .work {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .work-header {
   width: 20%;
 }
 .work-card-hero {
-  width: 75%;
 }
 
 .work-cards {
-  width: 75%;
+  width: 80%;
   justify-content: right;
 }
+
+.work-cards li {
+  display: inline;
+}
+
+.work-cards ul {
+}
+
 footer {
   display: flex;
+  /* justify-content: space-between; */
 }
+
 .contact-header {
   width: 20%;
 }
