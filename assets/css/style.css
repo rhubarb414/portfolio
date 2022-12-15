@@ -14,6 +14,7 @@ body * {
 header {
   background-color: var(--blue-main);
   color: azure;
+  position: relative;
 }
 
 nav {
@@ -41,13 +42,20 @@ a {
   /* keep image resolution without spilling beyond the container size */
   object-fit: cover;
 }
-/* Begin layout for main using grid
 
-main {
-  display: grid;
-} */
-
-/* Old css for trying the main layout using flex */
+.header-image::before {
+  content: "Future Developer 👀";
+  color: azure;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: var(--blue-main);
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  padding-right: 3%;
+  padding-left: 10px;
+}
 .bio {
   display: flex;
 }
@@ -69,6 +77,11 @@ main {
 .work {
   display: flex;
   flex-wrap: nowrap;
+}
+
+/* adds hover glow to work cards */
+.work img:hover {
+  box-shadow: 5px 10px 20px var(--blue-main);
 }
 
 .work-header {
