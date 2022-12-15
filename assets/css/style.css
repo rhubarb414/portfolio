@@ -11,7 +11,7 @@ body * {
 }
 
 header {
-  background-color: darkblue;
+  background-color: rgb(14, 14, 42);
   color: azure;
 }
 
@@ -27,6 +27,12 @@ nav a {
   color: azure;
 }
 
+.header-image img {
+  height: 100px;
+  width: 100%;
+  /* keep image resolution without spilling beyond the container size */
+  object-fit: cover;
+}
 /* Begin layout for main using grid
 
 main {
@@ -67,20 +73,35 @@ main {
   justify-content: right;
 }
 
+.work-card-hero {
+  padding: 0;
+  margin: 0;
+}
+
 .work-card-hero img {
-  width: 100%;
+  width: 90%;
+  margin-top: 10px;
   border: 3px solid black;
 }
 
 .work-cards li {
   display: inline;
+  /* justify-content: left; */
 }
 
 .work-cards-row-one img {
   width: 45%;
   border: 3px solid black;
 }
+
+.work-cards-row-two img {
+  width: 45%;
+  border: 3px solid black;
+}
+
+/* Make it possible for li elements to take up the whole container */
 .work-cards ul {
+  padding: 0;
 }
 
 footer {
@@ -88,6 +109,7 @@ footer {
   /* justify-content: space-between; */
 }
 
+/* can consolidate by renaming all asides to aside-header? */
 .contact-header {
   width: 18%;
   border-right: 5px solid grey;
