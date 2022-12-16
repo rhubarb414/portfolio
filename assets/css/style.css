@@ -171,15 +171,7 @@ footer {
   display: flex;
   background-color: var(--blue-main);
   color: var(--white-text);
-  /* justify-content: space-between; */
 }
-
-/* can consolidate by renaming all asides to aside-header? */
-/* .contact-header {
-  width: 18%;
-  border-right: 5px solid grey;
-  margin: 1%;
-} */
 
 .contact {
   padding: 0;
@@ -188,6 +180,8 @@ footer {
   display: inline;
   margin: 10px;
 }
+
+/* || Responsive layout for small screens */
 
 @media screen and (max-width: 768px) {
   nav {
@@ -256,5 +250,20 @@ footer {
   }
   .work-card-two::before {
     bottom: 35px;
+  }
+
+  footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 70px;
+  }
+
+  .contact-header {
+    border: none;
+  }
+  .contact-header h2 {
+    margin-bottom: 0;
+    text-align: center;
   }
 }
