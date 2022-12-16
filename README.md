@@ -10,6 +10,8 @@ I built it using flexbox, as that is what we learned in class. However, I've loo
 
 ## Usage
 
+View the deployed website at: https://rhubarb414.github.io/challenge-02-portfolio/
+
 On screens larger 768px, the site should resemble this screenshot:
 ![screenshot of portolio site on desktop](./assets/images/page-full.png)
 
