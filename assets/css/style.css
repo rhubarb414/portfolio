@@ -260,6 +260,7 @@ footer {
   .contact-header {
     /* remove seperator */
     border: none;
+    width: auto;
   }
   .contact-header h2 {
     margin-bottom: 0;
