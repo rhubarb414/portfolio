@@ -25,3 +25,5 @@ This site includes a media call for screens 768px and below, in which case it wi
 - HTML and CSS logos are from vectorlogo.zone
 
 ## License
+
+View MIT license in repo.
