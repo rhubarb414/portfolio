@@ -1,3 +1,5 @@
+/* || Top-level styles */
+
 :root {
   --blue-main: rgb(14, 14, 42);
   --white-text: azure;
@@ -7,10 +9,18 @@ body {
   font-family: Trebuchet, Arial, sans-serif;
 }
 
-/* border to outline elements in dev */
-body * {
-  /* border: 5px solid aqua; */
+aside {
+  width: 18%;
+  /* separator between section labels and content */
+  border-right: 5px solid grey;
+  margin: 1%;
 }
+
+a {
+  color: var(--white-text);
+}
+
+/* || Header styles */
 
 header {
   background-color: var(--blue-main);
@@ -25,17 +35,10 @@ nav {
   margin-right: 3%;
 }
 
-section {
-  margin: 0;
-  padding: 0;
-}
 nav li {
+  /* space out links and display horizontally */
   display: inline;
   margin: 10px;
-}
-
-a {
-  color: var(--white-text);
 }
 
 .header-image img {
@@ -45,6 +48,7 @@ a {
   object-fit: cover;
 }
 
+/* subhead text */
 .header-image::before {
   content: "Future Full-Stack Developer 👀";
   color: var(--white-text);
@@ -58,29 +62,23 @@ a {
   padding-right: 3%;
   padding-left: 10px;
 }
+
+/* || Bio section styles */
+
 .bio {
   display: flex;
 }
-
-aside {
-  width: 18%;
-  border-right: 5px solid grey;
-  margin: 1%;
-}
-
-/* .bio-header {
-  width: 18%;
-  border-right: 5px solid grey;
-  margin: 1%;
-} */
 
 .bio-content {
   width: 80%;
 }
 
+/* keep text off the right edge */
 .bio-content p {
   width: 95%;
 }
+
+/* || Work section styles */
 .work {
   display: flex;
   flex-wrap: nowrap;
@@ -91,19 +89,8 @@ aside {
   box-shadow: 5px 10px 20px var(--blue-main);
 }
 
-/* .work-header {
-  width: 18%;
-  border-right: 5px solid grey;
-  margin: 1%;
-} */
-
 .work-cards {
   width: 80%;
-  justify-content: right;
-}
-
-.work-cards > div {
-  margin-right: 5%;
 }
 
 .work-card-hero {
@@ -113,12 +100,16 @@ aside {
 }
 
 .work-card-hero img {
-  width: 91%;
+  /* As good as I could get the hero image to line up
+    with row cards below, though I think the root issue
+    is with the row cards. This is a band-aid fix. */
+  width: 91.5%;
   margin-top: 10px;
   border: 3px solid var(--blue-main);
   position: relative;
 }
 
+/* hero card label */
 .work-card-hero a::before {
   content: "Javascript";
   color: var(--white-text);
@@ -149,33 +140,34 @@ aside {
   border: 3px solid var(--blue-main);
 }
 
+/* card one label */
 .work-card-one::before {
   content: "HTML";
   color: var(--white-text);
   background-color: var(--blue-main);
   position: absolute;
   bottom: 20px;
-  padding: 5px;
+  padding: 10px;
 }
 
+/* card two label */
 .work-card-two::before {
   content: "CSS";
   color: var(--white-text);
   background-color: var(--blue-main);
   position: absolute;
   bottom: 20px;
-  padding: 5px;
+  padding: 10px;
 }
 
+/* || Footer styles */
 footer {
   display: flex;
   background-color: var(--blue-main);
   color: var(--white-text);
 }
 
-.contact {
-  padding: 0;
-}
+/* space out contact links and display horizontally */
 .contact li {
   display: inline;
   margin: 10px;
@@ -198,6 +190,7 @@ footer {
   .bio-header {
     width: auto;
     margin: auto;
+    /* remove seperator */
     border-right: none;
     align-self: center;
   }
@@ -217,6 +210,7 @@ footer {
     width: auto;
     margin: auto;
     padding-top: 10px;
+    /* remove seperator */
     border-right: none;
     align-self: center;
   }
@@ -229,14 +223,11 @@ footer {
   .work-cards div {
     margin: 0;
     width: 100%;
-    position: relative;
   }
 
+  /* make all work cards full width */
   .work-card-hero img {
     width: 100%;
-    /* margin-left: 12%; */
-    border: 3px solid var(--blue-main);
-    position: relative;
   }
   .work-cards-row-one img {
     width: 100%;
@@ -245,6 +236,8 @@ footer {
   .work-cards-row-two img {
     width: 100%;
   }
+
+  /* adjust label position due to adding the margin-bottom above^^ */
   .work-card-one::before {
     bottom: 35px;
   }
@@ -256,10 +249,12 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    /* add space so contact links aren't at the very bottom of screen */
     padding-bottom: 70px;
   }
 
   .contact-header {
+    /* remove seperator */
     border: none;
   }
   .contact-header h2 {
