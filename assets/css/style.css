@@ -137,7 +137,6 @@ aside {
 .work-cards li {
   display: inline;
   position: relative;
-  /* justify-content: left; */
 }
 
 .work-cards-row-one img {
@@ -233,7 +232,7 @@ footer {
     width: 80%;
   }
 
-  .work-card-hero {
+  .work-cards div {
     margin: 0;
     width: 100%;
     position: relative;
@@ -244,5 +243,18 @@ footer {
     /* margin-left: 12%; */
     border: 3px solid var(--blue-main);
     position: relative;
+  }
+  .work-cards-row-one img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .work-cards-row-two img {
+    width: 100%;
+  }
+  .work-card-one::before {
+    bottom: 35px;
+  }
+  .work-card-two::before {
+    bottom: 35px;
   }
 }
