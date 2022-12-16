@@ -167,10 +167,14 @@ footer {
   color: var(--white-text);
 }
 
+/* align contact links to the left */
+.contact {
+  padding: 0;
+}
 /* space out contact links and display horizontally */
 .contact li {
   display: inline;
-  margin: 10px;
+  margin-right: 20px;
 }
 
 /* || Responsive layout for small screens */
@@ -260,5 +264,9 @@ footer {
   .contact-header h2 {
     margin-bottom: 0;
     text-align: center;
+  }
+  .contact li {
+    display: inline;
+    margin: 10px;
   }
 }
