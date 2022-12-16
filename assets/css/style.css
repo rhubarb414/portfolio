@@ -165,11 +165,15 @@ footer {
   display: flex;
   background-color: var(--blue-main);
   color: var(--white-text);
+  /* add space so contact links aren't at the very bottom of screen */
+  padding-bottom: 70px;
 }
 
 /* align contact links to the left */
 .contact {
   padding: 0;
+  /* align links horizontally with contact header */
+  margin-top: 35px;
 }
 /* space out contact links and display horizontally */
 .contact li {
@@ -253,10 +257,11 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    /* add space so contact links aren't at the very bottom of screen */
-    padding-bottom: 70px;
   }
 
+  .contact {
+    margin-top: auto;
+  }
   .contact-header {
     /* remove seperator */
     border: none;
