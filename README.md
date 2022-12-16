@@ -4,6 +4,7 @@
 
 This is a basic portfolio page started in week 2 of the bootcamp. As I deploy new projects, I can add them here and have a professional portfolio to serve me in my job search.
 
+```
 The acceptance criteria was as follows:
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
@@ -18,6 +19,7 @@ WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
+```
 
 _Note: I did not add the photo, as in my previous hiring training, it's best practice to remove potential bias for candidates based on how they look._
 
