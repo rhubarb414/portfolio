@@ -110,7 +110,7 @@ nav li {
 }
 
 /* hero card label */
-.work-card-hero a::before {
+/* .work-card-hero a::before {
   content: "Javascript";
   color: var(--white-text);
   background-color: var(--blue-main);
@@ -118,7 +118,7 @@ nav li {
   bottom: 20px;
   padding: 10px;
   z-index: 1;
-}
+} */
 
 .work-cards ul {
   /* Make it possible for li elements to take up the whole container */
